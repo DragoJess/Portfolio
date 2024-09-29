@@ -1,0 +1,221 @@
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+:root {
+    --LightOrange: rgb(255, 105, 64);
+    --OffWhite: #eaeaea;
+    --OfferWhite: #d7d7d7;
+    --OffererWhite: #b8b8b8;
+    --Grey: #b9b9b9;
+    --DarkGrey: #3b3b3b;
+    --MediumGrey: #5f5f5f;
+    --Violet: #e866ff;
+  }
+  
+header
+{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    left: 0%;
+    height: 5%;
+    background-color: var(--DarkGrey);
+
+}
+.headertitle{
+    position: absolute;
+    rotate: 1.5deg;
+    font-family: Dela Gothic One;
+    font-size: 4.25vh;
+    text-align: center;
+    color: white;
+    top: -5.5vh;
+    left: 2.5vh;
+}
+.headernotch
+{
+    position:relative;
+    background-color: var(--DarkGrey);
+    border-radius: 2.5vh;
+    margin: auto;
+    width: 44vh;
+    height: 4vh;
+    top: 2.5vh;
+}
+.aboutblock
+{
+    width: 85%;
+    height: 85vh;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--Grey);
+    padding: 0;
+    margin: auto;
+    border-radius: 7vh;
+    z-index: 10;
+}
+body
+{
+    background-color: var(--OffWhite);
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("GridTexture.png");
+}
+.colorsplashtop
+{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    left:-0.0%;
+}
+footer
+{
+    position: relative;
+    width:100%;
+    height:10%;
+    background-color: white;
+}
+.colorsplashbottom
+{
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    left:-0.0%;
+}
+.colorLT
+{
+    width: 20vh;
+    height: 20vh;
+    float: left;
+}
+.colorRT
+{
+    width: 20vh;
+    height: 20vh;
+    float: right;
+}
+.dividerline
+{
+    position: absolute;
+    background-image: linear-gradient(to right, var(--MediumGrey), var(--Grey));
+    height: 6vh;
+    width:100%;
+    left:0;
+    top: 100vh;
+}
+.mainbodyleft
+{
+    z-index: -3;
+    position:relative;
+    height: 75vh;
+    width: 70%;
+    left:-7vh;
+    top:22vh;
+    float:left;
+    margin:auto;
+    background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
+    border-radius: 5vh;
+    rotate: 3deg;
+    margin-bottom: 3%;
+    border: 2px, solid white;
+}
+.mainbodyright
+{
+    z-index: -3;
+    position:relative;
+    height: 75vh;
+    width: 70%;
+    float:right;
+    right:-7vh;
+    top:22vh;
+    margin:auto;
+    background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
+    border-radius: 5vh;
+    rotate: -3deg;
+    margin-bottom: 3%;
+    border: 2px, solid white;
+}
+.decotypography
+{
+    width:100%;
+    height:100%;
+    font-size: 4.5vh;
+    margin:auto;
+    font-family: "Jacquarda Bastarda 9";
+    text-overflow: clip;
+    text-wrap:nowrap;
+    overflow: hidden;
+    color:var(--Violet);
+    text-align: left;
+    float:left;
+}
+.decotypographyleft
+{
+    font-size: 4.5vh;
+    margin:auto;
+    font-family: "Jacquarda Bastarda 9";
+    text-overflow: clip;
+    text-wrap:nowrap;
+    overflow: hidden;
+    color:var(--Violet);
+    text-align: left;
+    float:left;
+    position:relative;
+    left: 2vh;
+}
+.decotypographyright
+{
+    font-size: 4.5vh;
+    margin:auto;
+    font-family: "Jacquarda Bastarda 9";
+    text-overflow: clip;
+    text-wrap:nowrap;
+    overflow: hidden;
+    color:var(--Violet);
+    text-align: right;
+    float:right;
+    position:relative;
+    right: 2vh;
+}
+.sectiontitleleft
+{
+    position:relative;
+    color: var(--LightOrange);
+    text-align: left;
+    font-family: "Righteous";
+    font-size: 9vh;
+    top:-9vh;
+    left: 2vh;
+}
+.sectiontitleright
+{
+    position:relative;
+    color: var(--LightOrange);
+    text-align: left;
+    font-family: "Righteous";
+    font-size: 9vh;
+    top:-9vh;
+    right: 2vh;
+}
+.scribbleleft
+{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    right: -25vw;
+    top: 14vh;
+}
+.scribbleright
+{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    left: -25vw;
+    top: 14vh;
+}
