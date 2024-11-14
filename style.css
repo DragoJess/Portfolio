@@ -30,16 +30,6 @@ header
     background-color: var(--DarkGrey);
 
 }
-.headertitle{
-    position: absolute;
-    rotate: 1.5deg;
-    font-family: Dela Gothic One;
-    font-size: 4.25vh;
-    text-align: center;
-    color: white;
-    top: -5.5vh;
-    left: 2.5vh;
-}
 .headernotch
 {
     position:relative;
@@ -112,17 +102,10 @@ footer
     height:10%;
     background-color: white;
 }
-.colorLT
+.splash
 {
     width: 20vh;
     height: 20vh;
-    float: left;
-}
-.colorRT
-{
-    width: 20vh;
-    height: 20vh;
-    float: right;
 }
 .dividerline
 {
@@ -137,7 +120,7 @@ footer
 {
     z-index: -3;
     position:relative;
-    height: 75vh;
+    height: 56vh;
     width: 85%;
     left:-9vh;
     top:22vh;
@@ -149,14 +132,14 @@ footer
     margin-bottom: 5%;
     border: 2px, solid white;    
     text-align: right;
-    align-content:center;
+    align-content: center;
     box-shadow: 3px 3px 12px black;
 }
 .mainbodyright
 {
     z-index: -3;
     position:relative;
-    height: 75vh;
+    height: 56vh;
     width: 85%;
     float:right;
     right:-9vh;
@@ -168,7 +151,7 @@ footer
     margin-bottom: 5%;
     border: 2px, solid white;
     text-align: left;
-    align-content:center;
+    align-content: center;
     box-shadow: -3px 3px 12px black;
 }
 .mainbodytitle
@@ -184,17 +167,13 @@ footer
 .workcontainer
 {
     position: relative;
-    padding: 4vh;
-    width: 50%;
-    height: 50%;
-    margin: auto;
+    width: auto;
+    height: auto;
+    margin: 16px;
+    left: 5%;
+    right: 5%;
     align-content:center;
-}
-.workcontainerthumbnail
-{
-    width: 30vh;
-    height: 30vh;
-
+    display: flex;
 }
 .decotypography
 {
@@ -212,6 +191,7 @@ footer
 }
 .decotypographyleft
 {
+    position:relative;
     font-size: 4.5vh;
     margin:auto;
     font-family: "Jacquarda Bastarda 9";
@@ -221,11 +201,11 @@ footer
     color:var(--Violet);
     text-align: left;
     float:left;
-    position:relative;
     left: 2vh;
 }
 .decotypographyright
 {
+    position:relative;
     font-size: 4.5vh;
     margin:auto;
     font-family: "Jacquarda Bastarda 9";
@@ -235,7 +215,6 @@ footer
     color:var(--Violet);
     text-align: right;
     float:right;
-    position:relative;
     right: 2vh;
 }
 .sectiontitleleft
@@ -321,7 +300,7 @@ footer
 .linktext
 {
     font-family: Inter Tight;
-    font-size: 1.25vw;
+    font-size: 1vw;
     text-align: left;
     color: white;
     letter-spacing: 1px;
@@ -340,4 +319,30 @@ footer
     font-size: 2.5vh;
     font-family: "Righteous";
 }
-
+.workshowcase
+{
+    padding: 2vh;
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    align-content: center;
+}
+.workthumbnail
+{
+    width: 18vw;
+    height: 18vw;
+    margin:auto;
+    border-radius: 4vh;
+    border: 2px double white;
+    box-shadow: 2px 2px 5px black;
+}
+.workname
+{
+    position: absolute;
+    margin: 8px;
+    width:auto;
+    height:1vh;
+    text-align: center;
+    font-family: Inter Tight;
+    font-size: 1.6vw;
+}
