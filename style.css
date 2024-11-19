@@ -13,7 +13,8 @@ html
     --DarkGrey: #3b3b3b;
     --SlightlyDarkerGrey: #909090;
     --MediumGrey: #5f5f5f;
-    --Violet: #e866ff;
+    --Violet: #ef40ff;
+    --Invisible: rgba(0,0,0,0.01)
 }
 a
 {
@@ -26,49 +27,58 @@ header
     z-index: 99;
     width: 100%;
     left: 0%;
-    height: 5%;
+    height: 4%;
     background-color: var(--DarkGrey);
+    align-items: center;
 
 }
-.headernotch
+.fakefooter
 {
-    position:relative;
+    position: relative;
+    top: 270vh;
+    z-index: -50;
+    width: 105%;
+    left: -2.5%;
+    height: 10%;
     background-color: var(--DarkGrey);
-    border-radius: 2.5vh;
-    margin: auto;
-    width: 44vh;
-    height: 4vh;
-    top: 2.5vh;
+    display: flex;
+
 }
 .aboutblock
 {
     width: 85%;
     height: 90vh;
+    max-height: 125vw;
     padding-left: 0;
     padding-right: 0;
     background-image: linear-gradient(var(--Grey), var(--SlightlyDarkerGrey));
     padding: 0;
     margin: auto;
-    border-radius: 7vh;
+    border-radius: 6.5vmin;
     z-index: 10;
     display:flex;
-    padding-top: 8vh;
+    flex-wrap: wrap;
+    padding-top: 4vh;
+    align-items: center;
     box-shadow: 3px 3px 12px black;
 }
 .paragraphheadertext
 {
     font-family: Dela Gothic One;
-    font-size: 3vw;
+    font-size: 5vmin;
     text-align: left;
     color: white;
     letter-spacing: 2px;
+    text-shadow: 0 0 2px black;
 }
 .textcontent
 {
-    width: 75%;
-    margin: 2vh;
-    padding: 2vh;
-    position: relative
+    width: 70%;
+    margin: 5%;
+    position: relative;
+    text-shadow: 0 0 2px black;
+    top: -3vmax;
+    flex-basis: 70%;
 }
 .paragraph
 {
@@ -95,42 +105,34 @@ body
     margin:auto;
     left:-0.0%;
 }
-footer
-{
-    position: relative;
-    width:100%;
-    height:10%;
-    background-color: white;
-}
 .splash
 {
-    width: 20vh;
-    height: 20vh;
+    width: 10%;
 }
 .dividerline
 {
-    position: absolute;
+    position: relative;
     background-image: linear-gradient(to right, var(--MediumGrey), var(--Grey));
     height: 6vh;
     width:100%;
     left:0;
-    top: 105%;
+    top: 10%;
+    align-items: center;
 }
 .mainbodyleft
 {
     z-index: -3;
     position:relative;
-    height: 56vh;
-    width: 85%;
-    left:-9vh;
-    top:22vh;
+    height: 32vw;
+    width: 80%;
     float:left;
+    left:-4vw;
+    top: 15%;
     margin:auto;
     background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
-    border-radius: 5vh;
+    border-radius: 5vmin;
     rotate: 3deg;
-    margin-bottom: 5%;
-    border: 2px, solid white;    
+    margin-bottom: 10%;
     text-align: right;
     align-content: center;
     box-shadow: 3px 3px 12px black;
@@ -139,17 +141,16 @@ footer
 {
     z-index: -3;
     position:relative;
-    height: 56vh;
-    width: 85%;
+    height: 32vw;
+    width: 80%;
     float:right;
-    right:-9vh;
-    top:22vh;
+    right:-4vw;
+    top: 15%;
     margin:auto;
     background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
-    border-radius: 5vh;
+    border-radius: 5vmin;
     rotate: -3deg;
-    margin-bottom: 5%;
-    border: 2px, solid white;
+    margin-bottom: 10%;
     text-align: left;
     align-content: center;
     box-shadow: -3px 3px 12px black;
@@ -158,20 +159,19 @@ footer
 {
     position: absolute;
     width: 100%;
-    top: -10vh;
+    top: -4.5vmax;
     margin: 1vh;
-    font-size: 6vh; 
+    font-size: 5vmin; 
     font-family: Dela Gothic One;
-
+    text-shadow: 2px 1px var(--Violet);
 }
 .workcontainer
 {
     position: relative;
     width: auto;
     height: auto;
-    margin: 16px;
-    left: 5%;
-    right: 5%;
+    margin: 4vw;
+    bottom: 5%;
     align-content:center;
     display: flex;
 }
@@ -179,7 +179,7 @@ footer
 {
     width:100%;
     height:100%;
-    font-size: 4.5vh;
+    font-size: 2.5vmax;
     margin:auto;
     font-family: "Jacquarda Bastarda 9";
     text-overflow: clip;
@@ -192,7 +192,7 @@ footer
 .decotypographyleft
 {
     position:relative;
-    font-size: 4.5vh;
+    font-size: auto;
     margin:auto;
     font-family: "Jacquarda Bastarda 9";
     text-overflow: clip;
@@ -201,12 +201,11 @@ footer
     color:var(--Violet);
     text-align: left;
     float:left;
-    left: 2vh;
 }
 .decotypographyright
 {
     position:relative;
-    font-size: 4.5vh;
+    font-size: auto;
     margin:auto;
     font-family: "Jacquarda Bastarda 9";
     text-overflow: clip;
@@ -215,17 +214,19 @@ footer
     color:var(--Violet);
     text-align: right;
     float:right;
-    right: 2vh;
 }
 .sectiontitleleft
 {
     position:relative;
     color: var(--LightOrange);
     text-align: left;
+    display: table-cell;
+    vertical-align: middle;
     font-family: "Righteous";
-    font-size: 9vh;
-    top:-9vh;
+    font-size: 9vmin;
+    top:-131%;
     left: 2vh;
+    width:auto;
 }
 .sectiontitleright
 {
@@ -242,68 +243,71 @@ footer
     position: absolute;
     width: 20vw;
     height: 20vw;
-    right: -22vw;
-    top: 14vh;
+    right: -24vw;
+    align-self:center;
 }
 .scribbleright
 {
     position: absolute;
     width: 20vw;
     height: 20vw;
-    left: -22vw;
-    top: 14vh;
+    left: -24vw;
+    align-self:center;
 }
 .profilepicture
 {
-    width: 16vw;
-    height: 16vw;
+    width: 33vmin;
+    height: 33vmin;
     position: relative;
-    margin: 4vh;
-    top: 6vh;
-    border-radius: 7vh;
+    margin: 10%;
+    top: 3vmin;
+    border-radius: 10%;
     box-shadow: 3px 3px 6px black;
 }
 .linkbar
 {
-    position:absolute;
+    position:relative;
     display:flex;
     width: auto;
-    height: 4vh;
+    height: 4vmin;
     padding: 3px;
-    left: 20vw;
-    right: 20vw;
-    bottom: 10vh;
+    margin-left: 15%;
+    margin-right: 15%;
     align-self: center;
-    border-radius: 4vh;
+    border-radius: 10000px;
     background-color: var(--OffererWhite);
     box-shadow: 3px 3px 6px black;
+    flex-basis: 100%;
     
 }
 .linkitem
 {
     margin-left:auto;
     margin-right: auto;
-    width: 10vw;
-    border-radius: 2vh;
+    width: 25%;
+    border-radius: 10000px;
     height: auto;
     background-color: var(--MediumGrey);
     align-items: center;
     display: flex;
     box-shadow: 1px 1px 2px black;
+    border: 2px solid var(--Invisible);
+    transition-duration: 0.15s;
+}
+.linkitem:hover
+{
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px black;
+    transition-duration: 0.15s;
 }
 .linkicon
 {
-    height: 3.5vh;
-    width: 3.5vh;
-    margin: 1vh;
-}
-.linktext
-{
-    font-family: Inter Tight;
-    font-size: 1vw;
-    text-align: left;
-    color: white;
-    letter-spacing: 1px;
+    height: 90%;
+    width: auto;
+    margin: auto;
+    left: 10%;
+    right: 10%;
+
 }
 .linktitle
 {
@@ -311,38 +315,49 @@ footer
     width: auto;
     height: 4vh;
     padding: 3px;
-    left: 32vh;
-    right: 32vh;
-    bottom: 12vh;
+    left: 10%;
+    right: 10%;
+    bottom: 50%;
+    margin:autp;
     align-self: center;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 3.5vmin;
     font-family: "Righteous";
 }
 .workshowcase
 {
-    padding: 2vh;
+    padding: 1vw;
     position: relative;
-    width: 40vh;
-    height: 40vh;
+    width: 20vw;
+    height: 20vw;
     align-content: center;
 }
 .workthumbnail
 {
-    width: 18vw;
-    height: 18vw;
+    width: auto;
+    height: 100%;
     margin:auto;
-    border-radius: 4vh;
+    border-radius: 10%;
     border: 2px double white;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 1px 1px 4px black;
+    transition-duration: 0.15s;
+
+
+}
+.workthumbnail:hover
+{
+    box-shadow: 2px 2px 8px black;
+    border: 3px double var(--LightOrange);
+    transition-duration: 0.15s;
 }
 .workname
 {
     position: absolute;
-    margin: 8px;
+    margin: 6px;
     width:auto;
-    height:1vh;
+    height: 1vh;
     text-align: center;
+    align-self: center;
     font-family: Inter Tight;
-    font-size: 1.6vw;
+    font-size: 1.34vmax;
 }
