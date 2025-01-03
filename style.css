@@ -35,13 +35,13 @@ header
 .fakefooter
 {
     position: relative;
-    top: 270vh;
+    top: 125vw;
     z-index: -50;
     width: 105%;
     left: -2.5%;
-    height: 10%;
+    height: 10vw;
     background-color: var(--DarkGrey);
-    display: flex;
+    display: block;
 
 }
 .aboutblock
@@ -84,7 +84,7 @@ header
 {
     position: absolute;
     font-family: Inter Tight;
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     text-align: left;
     color: white;
     letter-spacing: 1px;
@@ -132,10 +132,11 @@ body
     background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
     border-radius: 5vmin;
     rotate: 3deg;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     text-align: right;
     align-content: center;
     box-shadow: 3px 3px 12px black;
+    display:block;
 }
 .mainbodyright
 {
@@ -150,10 +151,11 @@ body
     background-image: linear-gradient(var(--OfferWhite), var(--OffererWhite));
     border-radius: 5vmin;
     rotate: -3deg;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     text-align: left;
     align-content: center;
     box-shadow: -3px 3px 12px black;
+    display:block;
 }
 .mainbodytitle
 {
@@ -164,6 +166,11 @@ body
     font-size: 5vmin; 
     font-family: Dela Gothic One;
     text-shadow: 2px 1px var(--Violet);
+}
+.invisiblebuttonlink
+{
+    width: 100%;
+    height: 100%;
 }
 .workcontainer
 {
@@ -271,8 +278,8 @@ body
     width: auto;
     height: 4vmin;
     padding: 3px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
     align-self: center;
     border-radius: 10000px;
     background-color: var(--OffererWhite);
@@ -353,11 +360,23 @@ body
 .workname
 {
     position: absolute;
-    margin: 6px;
+    margin: 4px;
     width:auto;
     height: 1vh;
     text-align: center;
     align-self: center;
     font-family: Inter Tight;
-    font-size: 1.34vmax;
+    font-size: 1.4vmax;
+}
+.worksubtitle
+{
+    position: absolute;
+    margin: 6px;
+    width:auto;
+    height: 1vh;
+    bottom: -4.4vh;
+    text-align: center;
+    align-self: center;
+    font-family: Inter Tight;
+    font-size: 0.98vmax;
 }
